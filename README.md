@@ -1,5 +1,5 @@
 # SOEN-6011
-This repository contains all of the artifacts for the SOEN- 6011 project.
+This repository contains all of the artifacts for the SOEN-6011 project.(Transcedental functions)
 
 # Author 
 Avneet Kaur Pannu (avneepannu@gmail.com) 
