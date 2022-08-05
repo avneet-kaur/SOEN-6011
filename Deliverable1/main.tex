@@ -434,18 +434,87 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 \section{Debugger, Quality Attributes, Checkstyle}
 \subsection{Debugger}
 \subsubsection{Description}A debugger is a tool that can be used to examine what is happening in a programme. This allows you to find bugs by carefully analysing how the programme is executed. One can examine the behaviour of code using a debugger without changing the source code.
+
+\textbf{Debugger Used:} Used inbuilt debugger provided by IntelliJ IDEA.
+
 \subsubsection{Advantages}
+\begin{enumerate}
+    \item \textbf{Saves Time:} Debugger helps developer in identifying erroneous state of program. For example, if ode is breaking somewhere, then debugger comes to rescue to identify the root cause of error and hence saves time of developer.
+    \item \textbf{Bug free end product: } Debugger allows early fault detection and hence give enough time to developers to fix the error and release bug free software to customers.
+    \item \textbf{Watchpoints: } To edit code without restarting your program, Watchpoints comes to rescue and helps in inspecting data items or other objects.
+\end{enumerate}
 \subsubsection{Disadvantages}
+\begin{enumerate}
+    \item The downside of Debugger is that developers cannot debug microservices easily and serverless application in local environment.
+    \item Debugging remotely is also difficult since its dependent on permission, which require access and admin privileges to the server.
+\end{enumerate}
 \subsubsection{Snapshots}
+
+\begin{figure}
+\includegraphics[width=15cm]{LineBreakpoint.png}
+\caption{Snapshot representing usage of Line Breakpoint while debugging}
+\label{exp}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=15cm]{MethodBreakpoint.png}
+\caption{Snapshot representing usage of Method Breakpoint}
+\label{exp}
+\end{figure}
+
+\pagebreak
 
 \subsection{Quality Attributes}
+\subsubsection{Robustness}
+\begin{enumerate}
+   \item Each time new functionality was released, a corresponding Unit case was developed and tested.
+   \item Included all potential edge cases for the calculating function.
+   \item Handled all the potential exceptions properly.
+\end{enumerate}
+\subsubsection{Maintainability}
+\begin{enumerate}
+   \item Each method that has been defined has been properly commented.
+   \item Global variables should not be used to ensure future maintenance.
+   \item Refactoring code in accordance with coding standards after each commit to a github branch.
+\end{enumerate}
+\subsubsection{Correctness}
+\begin{enumerate}
+   \item Adhering to java coding standards.
+   \item To check the correctness of all the functionality, JUnit test cases are implemented.
+   \item Displaying correct result while on successful calculation..
+\end{enumerate}
+\subsubsection{Usability}
+\begin{enumerate}
+   \item A command-line interface that is easy to use.
+    \item Showing a menu of the functions a calculator can perform.
+    \item Providing customers with a helpful error message that tries to assist them in identifying minor mistakes
 
+\end{enumerate}
+
+
+\pagebreak
 \subsection{Checkstyle}
-\subsubsection{Description}
+\subsubsection{Description} To help programmers to adhere Java coding standard and to check the pragmatic quality of Java Code, development tool known as Checkstyle is used. It helps in checking Java code automatically. Also, developers can define there own set of rules and check code against their rules.
+\\\textbf{Checkstyle Used:} Used Sun Code Conventions checkstyle provided by Checkstyle-IDEA.
+
 
 \subsubsection{Advantages}
+\begin{enumerate}
+    \item Helps in resolving Class and method design problems.
+    \item Helps in resolving formatting issues.
+\end{enumerate}
 \subsubsection{Disadvantages}
+\begin{enumerate}
+    \item Configuration is time consuming, it needs external plugins to download.
+    \item To configure checkstyle, some people prefer making changes to maven configuration which is also error-prone and takes time to resolve.
+\end{enumerate}
 \subsubsection{Snapshots}
+\pagebreak
+\begin{figure}
+\includegraphics[width=15cm]{Checkstyle.png}
+\caption{Snapshot representing the usage of checkstyle}
+\label{exp}
+\end{figure}
 
 
 \section{Unit Tests}
