@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa4c484-43d9-4249-a508-e6a1d0053a7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ScientificCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScientificCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659656074717</updated>
       <workItem from="1659656076152" duration="2483000" />
-      <workItem from="1659658597619" duration="4262000" />
+      <workItem from="1659658597619" duration="4315000" />
     </task>
     <servers />
   </component>

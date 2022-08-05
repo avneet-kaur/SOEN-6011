@@ -37,13 +37,12 @@ public class ScientificCalculator {
             res = naturalExponential(Integer.parseInt(x));
             res = t_a * res;
         }
-//        else {
-//            t_b = Double.parseDouble(b);
-//            t_x = Integer.parseInt(x);
-//            res = calculatePower(t_b, t_x);
-//            res = t_a * res;
-//        }
-        res=0;
+        else {
+            t_b = Double.parseDouble(b);
+            t_x = Integer.parseInt(x);
+            res = calculatePower(t_b, t_x);
+            res = t_a * res;
+        }
 //		Result -> a*b^x
         System.out.println("Result = " + res + "\n");
         return Double.toString(res);
