@@ -90,7 +90,10 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 
 
 
+
 \end{itemize}
+
+\subsection{Context of use model }
 
 \section{Functional Requirement}
 \subsection{Definitions and abbreviations}
@@ -205,6 +208,27 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
 	\textbf{Description }\hspace{1.2cm} : When base value b=0 is raised to any exponent value, the $b^x$ portion of the function must return 0.\\
 	\textbf{Rationale }\hspace{1.6cm} : For instance, 0 raised to the power 11 yields 0.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR9  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : Calculator should handle the calculation for natural exponential function.\\
+	\textbf{Rationale }\hspace{1.6cm} : For instance, base b = e, then it must give output by calculating this exponential function.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR10  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : System should be able to calculate exponential function for negative exponents.\\
+	\textbf{Rationale }\hspace{1.6cm} : For instance, user enters negative value for exponent, then it must be able to calculate the function.\\
+
 
 \end{itemize}
 \subsubsection{Non-Functional Requirements}
@@ -519,8 +543,37 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 
 \section{Unit Tests}
 \subsection{Standard Guidelines}
-\subsection{Traceability}
+\begin{enumerate}
+    \item Test case should be readable.
+    \item Test case must be traceable to the requirements.
+    \item Each test case must have test ID.
+    \item Test case name should be meaningful and similar to the functionality it is testing.
+    \item It must be followed by description of the functionality it is testing.
+    \item Test case contain unit testing for each functionality of the calculator.
 
+\end{enumerate}
+
+\subsection{Traceability}
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+         \hline
+         Test case ID & Requirement ID & Description \\
+         \hline\hline
+         T4 & FR4 & Check for irrational inputs.\\
+         \hline
+         T2 & FR6 & Check for user-input value b. \\
+         \hline
+         T6 & FR7 & Check for exponent value = 0.\\
+         \hline
+         T7 & FR8 & Check for base value = 0.\\
+         \hline
+         T5 & FR9 & Check for Natural exponential function.\\
+         \hline
+         T10 & FR10 & Check for negative exponent value.\\
+        \end{tabular}
+        \label{tab:xyz}
+         \captionof{table}{Definitions and abbreviations}
+\end{center}
 
 
 
