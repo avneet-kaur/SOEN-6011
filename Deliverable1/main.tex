@@ -1,8 +1,14 @@
-\documentclass[12pt]{report}
+\documentclass[a4paper,12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{capt-of}
+\usepackage[utf8]{inputenc}
+% \usepackage{arevmath}
+\usepackage[noend]{algpseudocode}
+
 
 \title{ETERNITY: FUNCTION}
 \author{Avneet Kaur Pannu}
@@ -30,7 +36,7 @@
 	{ \huge \textbf \thetitle}\\[0.2 cm]
 	{ \huge \textbf{$ab^{x}$}}
 	\rule{\linewidth}{0.2 mm} \\[1.5 cm]
-	
+
 \begin{center}   {\Large Deliverable 1}\\[2.0 cm]
 \end{center}
 
@@ -47,31 +53,33 @@
 
 
 \section{Introduction}
-An exponential function is a function with the general form $ab^{x}$, $a\neq 0$, b is a positive real number and $b\neq 1$ .In an exponential function, a is constant, the base b is a constant, and the exponent x is a real variable.
+An exponential function is a function with the general form $ab^{x}$, $a\neq 0$, b is a positive real number and $b\neq 1$ .In an exponential function, a is constant, the base b is a constant, and the exponent x is a real variable.\cite{b1}
 
 \subsection{Domain}
 \begin{itemize}
-\item The domain is all Real numbers.
-\\$- \infty < x < + \infty$, $x \in R$
+\item The domain is all real numbers.
+\\$- \infty < x < + \infty$, $x \in R$ \cite{b1}
 \end{itemize}
 
 \subsection{Co-Domain}
 \begin{itemize}
-  \item  $For$ $ b > 0$ , range is $[0,\infty)$  where $ b \in R$  and  $x \in R$. 
-  \item  $For$ $ b = 0$ and $y =0$, range is 1 and  $For$ $ b = 0$ and $x>0$, range is 0.
- \item  $For$ $ b < 0$ , range is $(-\infty,\infty)$  where $ b \in R$  and  $x \in Z$.
+  \item  The co-domain is also set of all real numbers.
 \end{itemize}
 
 \subsection{Characteristic}
 \begin{itemize}
 
 
-  \item \textbf{Exponential growth} : In the function  f(x) = $b^{x}$ when  $b > 1$, the function represents exponential growth. In figure 1, it is evident on the left side. 
+  \item \textbf{Exponential growth} : In the function  f(x) = $b^{x}$ when  $b > 1$, the function represents exponential growth. In figure 1, it is evident on the left side. \cite{b3}
 
-  \item \textbf{Exponential decay} : In the function  f(x) = $b^{x}$ when  $0 < b < 1$, the function represents exponential decay. In figure 1, it is evident on the right side. 
-  
+  \item \textbf{Exponential decay} : In the function  f(x) = $b^{x}$ when  $0 < b < 1$, the function represents exponential decay. In figure 1, it is evident on the right side.\cite{b3}
+
    \item \textbf{Commutativity}:  Exponential function is not commutative which means $x^y \ne y^x $ for $x\ne y$. For example, $0^1 = 0$ and $1^0 = 1$.
-   
+
+   \item \textbf{Natural Exponential Function}: When the base is chosen to be b=e, the function f(x) = $e^x$ is called natural exponential function.\cite{b1}
+
+   \item \textbf{} In the function f(x) = a$b^{x}$  when $|a| > 1$, it increases the speed of either growth or decay, and $0<|a|<1$ decreases the speed of either growth or decay.\cite{b2}
+
 \begin{figure}
 \includegraphics[width=15cm]{ExponentialGrowthandDecay.png}
 \caption{Exponential Growth and Exponential Decay}
@@ -83,12 +91,198 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 \end{itemize}
 
 \section{Functional Requirement}
+\subsection{Definitions and abbreviations}
+\begin{center}
+    \begin{tabular}{|c|c|}
+         \hline
+         Term & Definition \\
+         \hline\hline
+         FR & Functional Requirement \\
+         \hline
+         NFR & Non-Functional Requirement \\
+         \hline
+         User & End user are the human users who interacts with the system \\
+         \hline
+         System & Application which is used for solving exponential function. \\
+         \hline
+        \end{tabular}
+        \label{tab:xyz}
+         \captionof{table}{Definitions and abbreviations}
+\end{center}
+
 \subsection{Assumptions}
+\begin{itemize}
+    \item The calculator must accepts the exponential constant like e in addition to the constants a and b.
+    \item
+
+\end{itemize}
+
 \subsection{Requirements}
+
+
+
+\subsubsection{Functional Requirements}
+\begin{itemize}
+    \item
+    \textbf{ID } \hspace{3cm} :FR1  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy \\
+	\textbf{Description }\hspace{1.2cm} :The calculator should ask the user to input a, b, and x. \\
+	\textbf{Rationale }\hspace{1.6cm} :In order to process function f(x) = a$b^x$ and give output system needs input form the user. \\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR2  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} :When a user input is not a number, the system should provide an error message. \\
+	\textbf{Rationale }\hspace{1.6cm} :The only acceptable input for an exponential function calculation is a number. \\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR3  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} :If a user enters incorrect data, the system shouldn't shut down but rather prompt users to reenter their data.\\
+	\textbf{Rationale }\hspace{1.6cm} :The ability to perform calculations again and without closing the programme should be available to the user. \\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR4  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : Whole numbers and rational numbers are accepted as user inputs.\\
+	\textbf{Rationale }\hspace{1.6cm} : The code does not handle irrational numbers. For instance, $\pi$, $\sqrt{2}$ \\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR5  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : Fractional inputs must be entered as double values.\\
+	\textbf{Rationale }\hspace{1.6cm} : If a user wants to provide a base or exponent value of 1/2, they must do so as 0.5.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR6  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : Base b is restricted to positive number.\\
+	\textbf{Rationale }\hspace{1.6cm} : In order to guarantee $b^x$ is real number.\\
+
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR7  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : When any base value of b is raised to the power of x=0, the function's $b^x$ portion must return the value 1.\\
+	\textbf{Rationale }\hspace{1.6cm} : For instance: 11 raised to the power 0 gives 1.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :FR8  \\
+	\textbf{Type } \hspace{2.4cm}  :Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : When base value b=0 is raised to any exponent value, the $b^x$ portion of the function must return 0.\\
+	\textbf{Rationale }\hspace{1.6cm} : For instance, 0 raised to the power 11 yields 0.\\
+
+\end{itemize}
+\subsubsection{Non-Functional Requirements}
+\begin{itemize}
+
+	\item
+    \textbf{ID } \hspace{3cm} :NFR1  \\
+	\textbf{Type } \hspace{2.4cm}  :Non-Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} :An error message should be informative and relevant to the user.\\
+	\textbf{Rationale }\hspace{1.6cm} : The user should be able to resolve simple problems on their own by understanding error message to enhance usability.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :NFR2  \\
+	\textbf{Type } \hspace{2.4cm}  :Non-Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} :The command line interface ought to be user-friendly.\\
+	\textbf{Rationale }\hspace{1.6cm} : The system should be simple for the user to operate. \\
+
+	\item
+    \textbf{ID } \hspace{3cm} :NFR3  \\
+	\textbf{Type } \hspace{2.4cm}  :Non-Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} :The outcome must be accurate.\\
+	\textbf{Rationale }\hspace{1.6cm} :  To enhance the accuracy of system. It is inappropriate to display incorrect ouptut to the user.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :NFR4  \\
+	\textbf{Type } \hspace{2.4cm}  :Non-Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} :There should be no more than 5 seconds of calculation time.\\
+	\textbf{Rationale }\hspace{1.6cm} :  In order to improve the performance of the system.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :NFR5  \\
+	\textbf{Type } \hspace{2.4cm}  :Non-Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : System should be maintainable for the duration of its anticipated lifetime and able to accommodate new requirements in response to stakeholders' changing needs. \\
+	\textbf{Rationale }\hspace{1.6cm} : Since future changes to software systems are inevitable. Maintainable systems are therefore simpler to alter.\\
+
+	\item
+    \textbf{ID } \hspace{3cm} :NFR6  \\
+	\textbf{Type } \hspace{2.4cm}  :Non-Functional\\
+	\textbf{Version Number} \hspace{0.3cm} :1.0  \\
+	\textbf{Owner } \hspace{1.98cm} : Avneet \\
+	\textbf{Priority } \hspace{1.75cm} : High\\
+	\textbf{Difficulty } \hspace{1.5cm} : Easy\\
+	\textbf{Description }\hspace{1.2cm} : The system should be developed using widely used and standardised language. \\
+	\textbf{Rationale }\hspace{1.6cm} : Java is used to build a system which is platform independent hence make the system portable.\\
+
+
+\end{itemize}
+
+
 \section{Algorithm}
+
+
+\subsection{Pseudocode}
 \subsection{Description}
 \subsection{Advantages and Disadvantages}
 
 
-
+\begin{thebibliography}{9}
+\bibitem{b1} Zill, D. G., \& Wright, W. S. (2011). Calculus: Early transcendentals. Jones and Bartlett Publishers.
+\bibitem{b2} Rock, N. M. (2007). Standards driven math. student standards handbook. Team Rock Press.
+\bibitem{b3}Exponential growth and decay - virtuallearningacademy.net. (n.d.). Retrieved August 3, 2022, from  \url{https://virtuallearningacademy.net/VLA/LessonDisplay/Lesson6156/MATHALGIIBU17Exponential_Decay.pdf}
+\end{thebibliography}
 \end{document}

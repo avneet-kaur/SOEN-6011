@@ -8,19 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fa4c484-43d9-4249-a508-e6a1d0053a7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOEN6011.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SOEN6011.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppCommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppCommandLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppCommandLineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppCommandLineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommandLineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandLineInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScientificCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScientificCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScientificCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScientificCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AppCommandLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppCommandLine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AppCommandLineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppCommandLineTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandLineInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommandLineInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ScientificCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ScientificCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ScientificCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ScientificCalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deliverable1/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Deliverable1/main.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +65,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Deliverable1" />
       <recent name="$PROJECT_DIR$/test" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -149,7 +139,7 @@
       <workItem from="1659656076152" duration="2483000" />
       <workItem from="1659658597619" duration="4315000" />
       <workItem from="1659694852844" duration="1922000" />
-      <workItem from="1659696805526" duration="1384000" />
+      <workItem from="1659696805526" duration="1705000" />
     </task>
     <servers />
   </component>
