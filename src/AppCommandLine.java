@@ -1,8 +1,14 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * This class is used for starting an application.
+ */
 public class AppCommandLine {
 
+    /**
+     * This function is used to get user values and prompt user to enter values for calculation.
+     */
     public static void startup() {
 //        CommandLineInterface cli = new CommandLineInterface();
         int choice;
@@ -61,6 +67,11 @@ public class AppCommandLine {
         }
     }
 
+    /**
+     * This method check if user input value a is valid and lying in constraints.
+     * @param input user value for a
+     * @return true or false
+     */
     public static boolean isValidInputForA(String input) {
         try {
             double temp = Double.parseDouble(input);
@@ -76,6 +87,11 @@ public class AppCommandLine {
         return false;
     }
 
+    /**
+     *This method check if user input value b is valid and lying in constraints.
+     * @param input user value b
+     * @return true or false
+     */
     public static boolean isValidInputForB(String input) {
         if (input.equals("e")) {
             return true;
@@ -96,6 +112,11 @@ public class AppCommandLine {
         }
     }
 
+    /**
+     * This method check if user input value x is valid and lying in constraints.
+     * @param input user value x
+     * @return true or false
+     */
     public static boolean isValidInputForX(String input) {
         try {
             double temp = Double.parseDouble(input);
@@ -113,6 +134,10 @@ public class AppCommandLine {
 
     }
 
+    /**
+     * This is main function to startup calculator.
+     * @param args Command line args.
+     */
     public static void main(String[] args) {
         System.out.println("----Loading System----");
         startup();
