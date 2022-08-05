@@ -272,7 +272,6 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 
 
 \end{itemize}
-\pagebreak
 
 \section{Algorithm}
 
@@ -290,12 +289,9 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
     \Return res
 \Else
     \If{(b == "e")}
-    \State exposum = 1
-    \State nterms = 25
-    \State for i $<=$ nterms
-        \State exposum = 1+x * exposum/i
+        \State res = exponentialFunc(x,n)
     \State end
-\State \Return a*exposum
+\State \Return a * res
     \Else
         \State for temp $<=$x
             \State res = res * b
@@ -305,6 +301,24 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
         \EndIf
 \EndIf
 \EndProcedure
+
+\\
+\Procedure{$exponentialFunc$}{$x, n$}
+\State \textbf{input: } int x, int n
+\State \textbf{output: } double res
+\State power = 1
+\State factorial = 1
+\State recursive
+\If{(n==0)}
+    \State \Return 1
+\EndIf
+\State recursive = exponentialFunc(x, n-1)
+\State power = power * x
+\State factorial = factorial * n
+\State \Return (recursive + power/factorial)
+\EndProcedure
+\\
+
 \end{algorithmic}
 \end{algorithm}
 
@@ -374,21 +388,71 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 \subsubsection{Algorithm1}
 
 \textbf{ Description: }
-\\\textbf{ Rationale: }
-\\\textbf{ Complexity: }
+\begin{itemize}
+    \item \textbf{Case 1:} When base has been assigned with any number, then for  loop will keep multiplying result variable by base variable until the power becomes zero. And then result is multiplied with constant a.
+    \item \textbf{Case 2:} When base has been assigned with natural exponential constant “e”. Then the function is computed using Taylor series. Since Taylor Series is a combination of multiple values like sum, power and factorial term, hence we will use static variables.
+\end{itemize}
+
+\textbf{ Rationale: } Due to its $O(n^2)$ time complexity and linear space constraints in calculating exponential function and O(n) for power calculations, this algorithm was discarded.So, in the following algorithm 2 I tried to make it efficient.
+\\\textbf{ Complexity: } $O(n)$, $O(n^2)$
 \\\textbf{ Advantages: }
-\\\textbf{ Disadvantages: }
+\begin{enumerate}
+    \item In iterative solution, there is no stack overflow exception where stack can take no more frames.
+    \item Iterative algorithms are easy to understand and readable by human.
+
+\end{enumerate}
+\textbf{ Disadvantages: }
+\begin{enumerate}
+    \item For case 1, this algorithm is taking O(n) time complexity.
+    \item For case 2, this algorithm is taking $O(n^2)$ time complexity and O(n) Space complexity.
+
+\end{enumerate}
 
 
 \subsubsection{Algorithm2}
 
 \textbf{ Description: }
-\\\textbf{ Rationale: }
-\\\textbf{ Complexity: }
+\begin{itemize}
+    \item \textbf{Case 1:}When base is assigned any numeric value, calculatePower() function is called which in further calls powerhandler() function to consider cases where power is negative and positive.
+    \item \textbf{Case 2:}When base has been assigned with natural exponential constant “e”, we calculated the sum using for loop, and calculated it for n terms using Taylor Series.
+\end{itemize}
+\textbf{ Rationale: } In Algorithm 1 case 1 is optimized to $O(log n)$ and case 2 is optimized to  O(n). So the decision of implementing Algorithm 2 is made since its more time and space efficient.
+\\\textbf{ Complexity: } $O(log n)$, O(n)
 \\\textbf{ Advantages: }
-\\\textbf{ Disadvantages: }
+\begin{enumerate}
+    \item Recursion add clarity to the code and reduce time while debugging code.
+    \item In this we tried to avoid stack overflow exception by handling all possible edge cases efficiently.
+\end{enumerate}
+\textbf{ Disadvantages: }
+\begin{enumerate}
+    \item Recursive methods will often throw a StackOverflowException when processing big numeric values.
+
+\end{enumerate}
 
 \subsection{Mindmap for Pseudocode format Selection}
+
+\section{Debugger, Quality Attributes, Checkstyle}
+\subsection{Debugger}
+\subsubsection{Description}A debugger is a tool that can be used to examine what is happening in a programme. This allows you to find bugs by carefully analysing how the programme is executed. One can examine the behaviour of code using a debugger without changing the source code.
+\subsubsection{Advantages}
+\subsubsection{Disadvantages}
+\subsubsection{Snapshots}
+
+\subsection{Quality Attributes}
+
+\subsection{Checkstyle}
+\subsubsection{Description}
+
+\subsubsection{Advantages}
+\subsubsection{Disadvantages}
+\subsubsection{Snapshots}
+
+
+\section{Unit Tests}
+\subsection{Standard Guidelines}
+\subsection{Traceability}
+
+
 
 
 
