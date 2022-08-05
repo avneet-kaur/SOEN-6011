@@ -29,28 +29,24 @@ public class AppCommandLine {
                     String a, b, x;
                     System.out.print("Enter value for a = ");
                     a = sc.next();
-                    a = isValidInputForA(a);
-                    while (a == null) {
+                    //a = isValidInputForA(a);
+                    while (!isValidInputForA(a)) {
                         System.out.print("Enter value for a =  ");
                         a = sc.next();
-                        a = isValidInputForA(a);
+
                     }
 
                     System.out.print("Enter value for b = ");
                     b = sc.next();
-                    b = isValidInputForB(b);
-                    while (b == null) {
+                    while (!isValidInputForB(b)) {
                         System.out.print("Enter value for b = ");
                         b = sc.next();
-                        b = isValidInputForB(b);
                     }
                     System.out.print("Enter value for x = ");
                     x = sc.next();
-                    x = isValidInputForX(x);
-                    while (x == null || x.equals("e")) {
+                    while (!isValidInputForX(x)|| x.equals("e")) {
                         System.out.print("Enter value for x = ");
                         x = sc.next();
-                        x = isValidInputForX(x);
                     }
 
                     String result = ScientificCalculator.calculateExponentialFunction(a, b, x);
@@ -65,11 +61,11 @@ public class AppCommandLine {
         }
     }
 
-    public static String isValidInputForA(String input) {
+    public static boolean isValidInputForA(String input) {
         try {
             double temp = Double.parseDouble(input);
             if (temp > -10000 && temp <= 10000 && temp != 0) {
-                return input;
+                return true;
             } else {
                 System.out.println("Please provide input for A lying in range -100000<a<100000 and a should not be equal to 0.");
             }
@@ -77,17 +73,17 @@ public class AppCommandLine {
             System.out.println("Invalid Input for a: " + e);
         }
         System.out.println("Please enter value for a again.");
-        return null;
+        return false;
     }
 
-    public static String isValidInputForB(String input) {
+    public static boolean isValidInputForB(String input) {
         if (input.equals("e")) {
-            return input;
+            return true;
         } else {
             try {
                 double temp = Double.parseDouble(input);
                 if (temp > 0 && temp <= 10000 && temp != 1) {
-                    return input;
+                    return true;
                 } else {
                     System.out.println("Base b is restricted to positive number and b should not be equal to 1, in order to guarantee that b^x is real number.Please provide input for B lying in range 0<b<100000");
                 }
@@ -96,15 +92,15 @@ public class AppCommandLine {
                 System.out.println("Invalid Input for b: " + e);
             }
             System.out.println("Please enter value for b again.");
-            return null;
+            return false;
         }
     }
 
-    public static String isValidInputForX(String input) {
+    public static boolean isValidInputForX(String input) {
         try {
             double temp = Double.parseDouble(input);
             if (temp > -10000 && temp <= 10000) {
-                return input;
+                return true;
             } else {
                 System.out.println("Please provide input for X lying in range -100000<x<100000");
             }
@@ -113,7 +109,7 @@ public class AppCommandLine {
             System.out.println("Invalid Input for x: " + e);
         }
         System.out.println("Please enter value for x again.");
-        return null;
+        return false;
 
     }
 

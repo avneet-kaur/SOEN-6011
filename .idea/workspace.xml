@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fa4c484-43d9-4249-a508-e6a1d0053a7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOEN6011.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SOEN6011.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppCommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppCommandLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScientificCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScientificCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AppCommandLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppCommandLine.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,17 +54,75 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration name="AppCommandLine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppCommandLine" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ScientificCalculatorTest.testExponentForFractionalValues">
+    <configuration name="AppCommandLineTest.fractionalBaseValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SOEN6011" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppCommandLineTest" />
+      <option name="METHOD_NAME" value="fractionalBaseValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScientificCalculatorTest.testExponentForFractionalValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SOEN6011" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScientificCalculatorTest" />
+      <option name="METHOD_NAME" value="testExponentForFractionalValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScientificCalculatorTest.testExponentForNegativeValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SOEN6011" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScientificCalculatorTest" />
+      <option name="METHOD_NAME" value="testExponentForNegativeValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScientificCalculatorTest.testZeroExponent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SOEN6011" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScientificCalculatorTest" />
+      <option name="METHOD_NAME" value="testZeroExponent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScientificCalculatorTest.testbase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SOEN6011" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScientificCalculatorTest" />
+      <option name="METHOD_NAME" value="testbase2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppCommandLine" />
+        <item itemvalue="JUnit.ScientificCalculatorTest.testExponentForFractionalValues" />
+        <item itemvalue="JUnit.ScientificCalculatorTest.testExponentForNegativeValues" />
+        <item itemvalue="JUnit.ScientificCalculatorTest.testZeroExponent" />
+        <item itemvalue="JUnit.AppCommandLineTest.fractionalBaseValue" />
+        <item itemvalue="JUnit.ScientificCalculatorTest.testbase2" />
       </list>
     </recent_temporary>
   </component>
