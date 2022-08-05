@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class AppCommandLine {
 
     public static void startup() {
-        CommandLineInterface cli = new CommandLineInterface();
+//        CommandLineInterface cli = new CommandLineInterface();
         int choice;
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            cli.displayOptions();
+            CommandLineInterface.displayOptions();
             System.out.println("Please select option 1 to calculate else option 2 to quit: ");
             choice = 0;
             try {
@@ -24,7 +24,7 @@ public class AppCommandLine {
 
             switch (choice) {
                 case 1:
-                    cli.inputWindow();
+                    CommandLineInterface.inputWindow();
                     Scanner sc = new Scanner(System.in);
                     String a, b, x;
                     System.out.print("Enter value for a = ");
@@ -48,12 +48,12 @@ public class AppCommandLine {
                         System.out.print("Enter value for x = ");
                         x = sc.next();
                     }
+                    ScientificCalculator.calculateExponentialFunction(a,b,x);
 
-                    String result = ScientificCalculator.calculateExponentialFunction(a, b, x);
                     startup();
                     break;
                 case 2:
-                    cli.quitWindow();
+                    CommandLineInterface.quitWindow();
                     System.exit(0);
             }
 

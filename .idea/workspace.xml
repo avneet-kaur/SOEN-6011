@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SHOW_STRUCTURE" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fa4c484-43d9-4249-a508-e6a1d0053a7f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SOEN6011.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SOEN6011.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppCommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppCommandLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppCommandLineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppCommandLineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommandLineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandLineInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScientificCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScientificCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ScientificCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScientificCalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/AppCommandLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppCommandLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AppCommandLineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppCommandLineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CommandLineInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommandLineInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ScientificCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ScientificCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ScientificCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ScientificCalculatorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +49,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2CucmgZYNF750auet5ahBxH6Duz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,6 +68,8 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -65,13 +82,28 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScientificCalculatorTest.testExponentForFractionalValues">
-    <configuration name="AppCommandLineTest.fractionalBaseValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ScientificCalculatorTest">
+    <configuration name="AppCommandLine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppCommandLine" />
+      <module name="SOEN6011" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppCommandLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SOEN6011" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AppCommandLineTest" />
-      <option name="METHOD_NAME" value="fractionalBaseValue" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScientificCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SOEN6011" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScientificCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,33 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScientificCalculatorTest.testZeroExponent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SOEN6011" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScientificCalculatorTest" />
-      <option name="METHOD_NAME" value="testZeroExponent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScientificCalculatorTest.testbase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SOEN6011" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScientificCalculatorTest" />
-      <option name="METHOD_NAME" value="testbase2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ScientificCalculatorTest" />
+        <item itemvalue="JUnit.AppCommandLineTest" />
+        <item itemvalue="Application.AppCommandLine" />
         <item itemvalue="JUnit.ScientificCalculatorTest.testExponentForFractionalValues" />
         <item itemvalue="JUnit.ScientificCalculatorTest.testExponentForNegativeValues" />
-        <item itemvalue="JUnit.ScientificCalculatorTest.testZeroExponent" />
-        <item itemvalue="JUnit.AppCommandLineTest.fractionalBaseValue" />
-        <item itemvalue="JUnit.ScientificCalculatorTest.testbase2" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +148,8 @@
       <updated>1659656074717</updated>
       <workItem from="1659656076152" duration="2483000" />
       <workItem from="1659658597619" duration="4315000" />
+      <workItem from="1659694852844" duration="1922000" />
+      <workItem from="1659696805526" duration="1384000" />
     </task>
     <servers />
   </component>
@@ -152,5 +166,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ScientificCalculator.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ScientificCalculator.java</url>
+          <line>2</line>
+          <properties class="ScientificCalculator" method="naturalExponential">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

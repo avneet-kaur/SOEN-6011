@@ -1,10 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import static org.junit.Assert.*;
-
 public class ScientificCalculatorTest {
-    ScientificCalculator sc = new ScientificCalculator();
 
 
     @Test
@@ -12,7 +9,7 @@ public class ScientificCalculatorTest {
         String a = "2";
         String b = "e";
         String x = "4";
-        assertEquals("109.19630006611712",sc.calculateExponentialFunction(a,b,x));
+        assertEquals("109.19630006611712",ScientificCalculator.calculateExponentialFunction(a,b,x));
     }
 
     @Test
@@ -20,31 +17,31 @@ public class ScientificCalculatorTest {
         String a = "2";
         String b = "11";
         String x = "0";
-        assertEquals("2.0",sc.calculateExponentialFunction(a,b,x));
+        assertEquals("2.0",ScientificCalculator.calculateExponentialFunction(a,b,x));
     }
 
     @Test
-    public void testZerobase() {
+    public void testZeroBase() {
         String a = "2";
         String b = "0";
         String x = "3";
-        assertEquals("0.0",sc.calculateExponentialFunction(a,b,x));
+        assertEquals("0.0",ScientificCalculator.calculateExponentialFunction(a,b,x));
     }
 
     @Test
-    public void testbase2() {
+    public void testBase2() {
         String a = "2";
         String b = "2";
         String x = "3";
-        assertEquals("16.0",sc.calculateExponentialFunction(a,b,x));
+        assertEquals("16.0",ScientificCalculator.calculateExponentialFunction(a,b,x));
     }
 
     @Test
-    public void testbase10() {
+    public void testBase10() {
         String a = "2";
         String b = "10";
         String x = "3";
-        assertEquals("2000.0",sc.calculateExponentialFunction(a,b,x));
+        assertEquals("2000.0",ScientificCalculator.calculateExponentialFunction(a,b,x));
     }
 
     @Test
@@ -52,7 +49,7 @@ public class ScientificCalculatorTest {
         String a = "2";
         String b = "2";
         String x = "-3";
-        assertEquals("0.25",sc.calculateExponentialFunction(a,b,x));
+        assertEquals("0.25",ScientificCalculator.calculateExponentialFunction(a,b,x));
     }
 
 }
