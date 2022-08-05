@@ -8,6 +8,8 @@
 \usepackage[utf8]{inputenc}
 % \usepackage{arevmath}
 \usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
+
 
 
 \title{ETERNITY: FUNCTION}
@@ -270,19 +272,132 @@ An exponential function is a function with the general form $ab^{x}$, $a\neq 0$,
 
 
 \end{itemize}
-
+\pagebreak
 
 \section{Algorithm}
 
-
 \subsection{Pseudocode}
+
+\begin{algorithm}
+\caption{Iterative Algorithm to calculate: $ab^x$ }
+\begin{algorithmic}
+\Procedure{$calculateExponentialFunction$}{$a,b,x$}
+\State \textbf{input: } String a, b, x
+\State \textbf{output: } double res
+\State  res = 1
+\State temp = 1
+\If{((a $||$ b) == "0")}
+    \Return res
+\Else
+    \If{(b == "e")}
+    \State exposum = 1
+    \State nterms = 25
+    \State for i $<=$ nterms
+        \State exposum = 1+x * exposum/i
+    \State end
+\State \Return a*exposum
+    \Else
+        \State for temp $<=$x
+            \State res = res * b
+            \State temp = temp + 1
+        \State end
+        \State \Return a*res
+        \EndIf
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+% Second logic: recursive approach
+\begin{algorithm}
+\caption{Recursive Algorithm to calculate: $ab^x$ }
+\begin{algorithmic}
+\Procedure{$calculateExponentialFunction$}{$a,b,x$}
+\State \textbf{input: } string a, b, x
+\State \textbf{output: } double res
+\State  res=0
+\If{(a $||$ b == 0)}
+    \State \Return res
+\ElsIf{(b=="e")}
+    \State res = naturalExponential(x)
+\Else
+ \State res = calculatePower(b,x)
+\EndIf
+\State res = $a * res$
+\State \Return res
+\EndProcedure
+\\
+\Procedure{$naturalExponential$}{$x$}
+\State \textbf{input: } int x
+\State \textbf{output: } double exposum
+\State nterms = 25
+\State exposum = 1
+\State for i $<=$ nterms
+    \State exposum = 1+x * exposum/i
+    \State end
+\State \Return exposum
+\EndProcedure
+\\
+\Procedure{$calculatePower$}{$b,x$}
+\State \textbf{input: } double b, int x
+\State \textbf{output: } double res
+\If{(($x < 0$)}
+\State \Return $1.0/powHelper(b,x)$
+   \EndIf
+\State \Return $powHelper(b,x)$
+\EndProcedure
+\\
+\Procedure{$powHelper$}{$b,x$}
+\State \textbf{input: } double b, int x
+\State \textbf{output: } double res
+\If{($x == 0$)}
+    \Return 1
+\EndIf
+\If{($x == 1$)}
+    \Return b
+\EndIf
+\If{($x mod 2$ == 0)}
+\State \Return $powerHandler(b*b,  n/2)$
+\Else
+\State \Return $b * powerHandler(b*b,  n/2)$
+\EndIf
+\EndProcedure
+\end{algorithmic}
+% \end{algorithm}
+
+\end{algorithm}
+
+\pagebreak
+
 \subsection{Description}
-\subsection{Advantages and Disadvantages}
+
+\subsubsection{Algorithm1}
+
+\textbf{ Description: }
+\\\textbf{ Rationale: }
+\\\textbf{ Complexity: }
+\\\textbf{ Advantages: }
+\\\textbf{ Disadvantages: }
+
+
+\subsubsection{Algorithm2}
+
+\textbf{ Description: }
+\\\textbf{ Rationale: }
+\\\textbf{ Complexity: }
+\\\textbf{ Advantages: }
+\\\textbf{ Disadvantages: }
+
+\subsection{Mindmap for Pseudocode format Selection}
+
+
 
 
 \begin{thebibliography}{9}
 \bibitem{b1} Zill, D. G., \& Wright, W. S. (2011). Calculus: Early transcendentals. Jones and Bartlett Publishers.
 \bibitem{b2} Rock, N. M. (2007). Standards driven math. student standards handbook. Team Rock Press.
 \bibitem{b3}Exponential growth and decay - virtuallearningacademy.net. (n.d.). Retrieved August 3, 2022, from  \url{https://virtuallearningacademy.net/VLA/LessonDisplay/Lesson6156/MATHALGIIBU17Exponential_Decay.pdf}
+\bibitem{b4}GeeksforGeeks. (2022, July 19). Write a program to calculate POW(X,N). GeeksforGeeks. Retrieved August 5, 2022, from https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/
+\bibitem{b5}Exponential Function Calculator. High accuracy calculation for life or science. (n.d.). Retrieved August 5, 2022, from https://keisan.casio.com/exec/system/1223447896
 \end{thebibliography}
 \end{document}
